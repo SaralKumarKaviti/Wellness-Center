@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Add Special Diet</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/student_style.css') }}">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body style="background:linear-gradient(45deg, #47cebe, #ef4a82);">
+  <div class="container">
+    <div class="title">Add Special Diet<span><a style="border-radius: 20px;" class="back"  href="">Back</a></span></div>
+
+    {% with messages=get_flashed_messages()%}
+    {% if messages %}
+    
+    {% for message in messages %}
+    <div class="" style="padding: 10px; color: green; border:3px;">
+        <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>  -->
+         {{message}}.
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+    
+    <div class="content">
+      <form action="" method="POST" enctype="multipart/form-data">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Food Item</span>
+            <input type="text" name = "specialFoodItem" placeholder="Enter Food Item" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Food Quantity</span>
+            <input type="text" name = "specialFoodQuantity" placeholder="Enter Food Quantity" required>
+          </div>
+
+          
+          
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Add Special Diet">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

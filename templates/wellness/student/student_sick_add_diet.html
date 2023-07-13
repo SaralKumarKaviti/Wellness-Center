@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Add Sick Diet</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/student_style.css') }}">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body style="background:linear-gradient(45deg, #47cebe, #ef4a82);">
+  <div class="container">
+    <div class="title">Add Sick Diet<span><a style="border-radius: 20px;" class="back"  href="">Back</a></span></div>
+
+    
+    <div class="content">
+      <form action="" method="POST" enctype="multipart/form-data">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Food Item</span>
+            <input type="text" name = "foodItem" placeholder="Enter Food Item" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Food Quantity</span>
+            <input type="text" name = "foodQuantity" placeholder="Enter Food Quantity" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">No of Times</span>
+            <input type="text" name = "numberOfTimes" placeholder="Enter Number of Times" required>
+          </div>
+
+          
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Add Sick Diet">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

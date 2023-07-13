@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Students Daily Sick Register</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/student_style.css') }}">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body style="background: rgba(0,100,90,0.8);">
+  <div class="container">
+    <div class="title">Students Daily Sick Registration<span><a style="border-radius: 20px;" class="back"  href="">Back</a></span></div>   
+    
+    
+    <div class="content">
+      <form action="" method="POST" enctype="multipart/form-data">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Student Name</span>
+            <input type="text" name = "studentName" placeholder="Enter Student Name" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Class Name</span>
+            <select name="className" id="classes" style="width:100%; height:45px;" class="input-box">
+            <option value="None">None</option>
+            <option value="6A">6A</option>
+            <option value="6B">6B</option>
+            <option value="7A">7A</option>
+            <option value="7B">7B</option>
+            <option value="8A">8A</option>
+            <option value="8B">8B</option>
+            <option value="9A1">9A1</option>
+            <option value="9A2">9A2</option>
+            <option value="9B1">9B1</option>
+            <option value="9B2">9B2</option>
+            <option value="10A">10A</option>
+            <option value="10B">10B</option>
+            <option value="inter-mpc">Inter-MPC</option>
+
+            </select>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Roll Number</span>
+            <input type="text" name = "rollNumber" placeholder="Enter Roll Number" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Disease Name</span>
+            <input type="text" name = "diseaseName" placeholder="Enter Disease" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Date</span>
+            <input type="date" name = "date" placeholder="Enter Email Id" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Time</span>
+            <input type="time" name = "time" placeholder="Enter Phone Number" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Day</span>
+            <select name="day" id="classes" style="width:100%; height:45px;" class="input-box">
+            <option value="Sunday">Sunday</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            </select>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Medicine Issued</span>
+            <input type="text" name = "medicineIssued" placeholder="Enter Medicine Issued" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Permission Letter</span>
+            <input type="file" name ="permissionLetter" required>
+          </div>
+
+         
+          <!-- <div class="input-box">
+            <span class="details">amount</span>
+            <input type="text" name ="amount" placeholder="Enter amount" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Reason</span>
+            <input type="text" name ="reasonTaking" placeholder="Enter reason" required>
+          </div> -->
+         <!--  <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div> -->
+        </div>
+        <!-- <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div> -->
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

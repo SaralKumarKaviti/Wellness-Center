@@ -1,0 +1,134 @@
+.cards{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 3%;
+  background: linear-gradient(45deg, #47cebe, #ef4a82);
+  position: relative;
+  height:800px;
+  float:left;
+  width:80%;
+  overflow-y: scroll;
+
+   
+}
+
+.maincontainer{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 40px;
+  position: absolute;
+  width: 200px;
+  height: 330px;
+  top: 30%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+
+.thefront img {
+  border-radius: 50%;
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+  position: relative;
+  top: 0;
+  left: 33%;
+  width: 200px;
+  height: 250px;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+
+  
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background:#e5e5e5;
+  color: #000;
+  text-align: center;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: #333;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.thefront img
+{
+border-radius: 50%;
+}
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1, .theback h1{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+.thefront h4, .theback h4{
+  font-family: 'zilla slab', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.thefront p, .theback p{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 10px;
+  text-align: center;
+}
+.content
+{
+  text-align: center;
+
+}
+.content h1
+{
+  font-size: 50px;
+  color:rgb(41, 39, 36);
+  font-weight: 80;
+}
+@media screen and (max-width: 820px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+}
+@media screen and (max-width: 820px) {
+  .maincontainer,.content,.theback,.thefront,.thecard{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    float: none;
+  }
+  @media screen and (max-width: 820px) {
+    .cards{
+      width: 100%;
+    }

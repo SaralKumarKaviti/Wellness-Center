@@ -1,0 +1,117 @@
+.container{
+  width: 98%;
+  height:900px;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  display:inline-flexbox;
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+}
+.title{
+  top:5%;
+}
+table, th, td {
+
+  border: 1px solid black;
+  text-align: center;
+  font-size: 15px;
+}
+.one{
+  align:center; 
+  height:50px;
+  width:100px;
+  
+}
+@media screen and (max-width: 1000px) {
+  form,table,.container {
+     display: block;
+  }
+}
+* @media only screen and (max-width: 1000px) {
+  /* For mobile phones: */
+  title,.container {
+    width:100%;  
+  }
+}
+@media only screen and (max-width: 1000px) {
+  /* For mobile phones: */
+  table,title,.container {
+    width:100%;
+  }
+}
+@media only screen and (max-width: 1115px) {
+  /* For mobile phones: */
+  th,td,.one{
+    align:auto; 
+    height:60px;
+    width:10%;
+    display:inline-flexbox;
+    font-size: 8px;
+  }
+}
+@media only screen and (max-width: 853px) {
+  /* For mobile phones: */
+  th,td,.one{
+    align:auto; 
+    height:60px;
+    width:10%;
+    display:inline-flexbox;
+    font-size: auto;
+  }
+}
+@media only screen and (max-width: 626px) {
+  /* For mobile phones: */
+  th,td,.one{
+    align:auto; 
+    height:40px;
+    width:10%;
+    display:inline-flexbox;
+    font-size: 5px;
+  }
+}
+@media only screen and (max-width: 477px) {
+  /* For mobile phones: */
+  th,td,.one{
+    align:auto; 
+    height:40px;
+    width:10%;
+    display:inline-flexbox;
+    font-size: 4px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  /* For mobile phones: */
+  th,td,.one{
+    align:auto; 
+    height:40px;
+    width:10%;
+    display:inline-flexbox;
+    font-size: 3px;
+  }
+}
+@media only screen and (max-width: 301px) {
+  /* For mobile phones: */
+  th,td,.one{
+    align:auto; 
+    height:30px;
+    width:10%;
+    display:inline-flexbox;
+    font-size: 2px;
+  }
+}
+@media only screen and (max-width: 290px) {
+  /* For mobile phones: */
+  th,td,.one{
+    align:auto; 
+    height:20px;
+    width:10%;
+    display:inline-flexbox;
+    font-size: 2px;
+  }
+}

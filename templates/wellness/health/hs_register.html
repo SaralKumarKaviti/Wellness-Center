@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>HS Registration</title>-
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/student_style.css') }}">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   </head>
+
+
+<body style="background: rgba(0,100,90,0.8);">
+  <div class="container">
+    <div class="title">HS Registration <span><a class="back"  href="">back</a></span></div>
+
+    {% with messages=get_flashed_messages()%}
+    {% if messages %}
+    
+    {% for message in messages %}
+    <div class="" style="padding: 10px; color: green; border:3px;">
+        <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>  -->
+         {{message}}.
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+    
+    <div class="content">
+      <form action="" method="POST" enctype="multipart/form-data">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">First Name</span>
+            <input type="text" name = "firstName" placeholder="Enter First Name" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Last Name</span>
+            <input type="text" name = "lastName" placeholder="Enter Last Name" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Email Id</span>
+            <input type="email" name = "emailId" placeholder="Enter Email Id" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" name = "phoneNumber" placeholder="Enter Phone Number" required>
+          </div>
+
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" name = "password" placeholder="Enter Password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">ProfilePic</span>
+            <input type="file" name = "profilePic" required>
+          </div>
+
+         
+          <!-- <div class="input-box">
+            <span class="details">amount</span>
+            <input type="text" name ="amount" placeholder="Enter amount" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Reason</span>
+            <input type="text" name ="reasonTaking" placeholder="Enter reason" required>
+          </div> -->
+         <!--  <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div> -->
+        </div>
+        <!-- <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div> -->
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

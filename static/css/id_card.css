@@ -1,0 +1,91 @@
+body {
+		
+			font-family: 'Open Sans Condensed','Arial Narrow', Arial, sans-serif;
+		     background: linear-gradient(45deg, #47cebe, #ef4a82);
+
+		}
+		.id-card-holder {
+      
+			width: 525px;
+			height:322px;
+		    padding: 4px;
+		    margin: 0 auto;
+		    background-color: #1f1f1f;
+		    border-radius: 5px;
+		    position: relative;
+
+		}
+		.id-card-holder:after {
+		    content: '';
+		    width: 7px;
+		    display: block;
+		    background-color: #0a0a0a;
+		    height: 100px;
+		    position: absolute;
+		    top: 120px;
+		    border-radius: 0 5px 5px 0;
+		}
+		.id-card-holder:before {
+		    content: '';
+		    width: 7px;
+		    display: block;
+		    background-color: #0a0a0a;
+		    height: 100px;
+		    position: absolute;
+		    top: 120px;
+		    left: 523px;
+		    border-radius: 5px 0 0 5px;
+		}
+		.id-card {
+			
+			background-color: #fff;
+			height:253px;
+			padding: 10px;
+			border-radius: 0px;
+			text-align: center;
+			box-shadow: 0 0 1.5px 0px #b9b9b9;
+		}
+		.id-card img {
+			margin: 0 auto;
+		}
+		.header{
+			background:#21365e;
+			height:50px;
+			margin-top: -31px;
+		    margin-left: -10px;
+			width:104%;
+			font-size: 20px;
+		}
+			.photo img {
+			width: 130px;
+			height: 150px;
+    		margin-top: 0px;
+    		float: left;
+		}
+		.details{
+			padding-left: 10px;
+			font-size: 13px;
+		}
+		
+		h2 {
+			font-size: 15px;
+			margin: 15px 0;
+			padding-left: 0px;
+		}
+		h3 {
+			font-size: 12px;
+			margin: 2.5px 0;
+			font-weight: 300;
+		}
+		
+	
+		.footer{
+			background:#21365e;
+			height:50px;
+			margin-top: -31px;
+		    margin-left: -10px;
+			width:104%;
+			font-size: 18px;
+			}
+
+		

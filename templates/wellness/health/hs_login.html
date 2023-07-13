@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HS Login</title>
+<meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/teacher_log_style.css') }}">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+   
+      
+
+<div class="login" >
+       <h2 style="text-align: center;">HS Login</h2><br>
+       {% with messages=get_flashed_messages()%}
+    {% if messages %}
+    
+    {% for message in messages %}
+    <div class="" style="padding: 10px; color: white; border:3px;">
+        <!-- <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>  -->
+         {{message}}.
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+      <form action="" method="post" style="border-radius: 15px 15px 0px 0px;">
+        <div class="container">
+            <label for="uname"><b>Email Id</b></label>
+            <input style="border-radius: 15px 15px 15px 15px;" type="text" placeholder="Enter Email" name="emailId" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input style="border-radius: 15px 15px 15px 15px;" type="password" placeholder="Enter Password" name="password" required>
+                
+            <button style="border-radius: 15px 15px 15px 15px;" type="submit">Login</button>
+            <label>
+              
+            </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          If Don't Have Account <a href="{{url_for('wellnessCenterRegistrationPage')}}"><font style='color: darkgreen;'>Register</font></a>
+          <span class="psw">Forgot <a href="{{url_for('wellnessHsForgotPasswordPage')}}"><font style='color: orangered'>Password?</font></a></span>
+        </div>
+
+      </form>
+
+</div> 
+
+
+
+</body>
+</html>

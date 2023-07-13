@@ -1,0 +1,79 @@
+.container{
+  max-width: 700px;
+  width:auto;
+  height:500px;
+  
+  background-color: #fff;
+  margin-left: 35%;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  left:30%;
+  text-align: center;
+
+}
+.Btns
+{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  position: absolute;
+  left:41%;
+  top:35%;
+  
+
+}
+.btn1
+{
+    border:none;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;  
+    background-color: #4CAF50; 
+    height: 40px;
+    width: 150px;
+    border-bottom: #9b59b6;
+    border-radius: 20%;
+    border: 1px solid black;
+    
+    
+}
+.btn1:hover {
+  background-color: #008CBA;
+}
+@media screen and (max-width: 620px) {
+  .btn1,.Btns,.container .title,.container {
+     display: block;
+  }
+}
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .btn1,.Btns,.container .title,.container {
+     left:auto; 
+    
+  
+  }
+}
+@media  screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .container {
+    left:30px;
+    height:650px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .btn1,.Btns{
+     top:25%;
+    
+  }
+}
+
+
